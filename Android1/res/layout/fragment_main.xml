@@ -1,0 +1,207 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android1.MainActivity$PlaceholderFragment" >
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button6"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/button10"
+        android:text="1" 
+        android:onClick="func1"
+        />
+
+    <Button
+        android:id="@+id/b9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/b1"
+        android:layout_alignBottom="@+id/b1"
+        android:layout_marginLeft="33dp"
+        android:layout_toRightOf="@+id/badd"
+        android:text="9" 
+        android:onClick="func9"
+        />
+
+    <Button
+        android:id="@+id/b0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/et"
+        android:layout_marginBottom="70dp"
+        android:text="0" 
+        android:onClick="func0"
+        />
+
+    <Button
+        android:id="@+id/bdot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/b9"
+        android:layout_alignBottom="@+id/b9"
+        android:layout_toRightOf="@+id/b9"
+        android:text="." 
+        android:onClick="funcdot"
+        />
+
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/b0"
+        android:layout_marginBottom="16dp"
+        android:layout_toRightOf="@+id/bdot"
+        android:text="3" 
+        android:onClick="func3"
+        />
+
+    <Button
+        android:id="@+id/bclear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b3"
+        android:layout_toRightOf="@+id/bmul"
+        android:text="Clear" 
+        android:onClick="funcclear"
+        />
+
+    <Button
+        android:id="@+id/b4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/b3"
+        android:layout_toLeftOf="@+id/bdot"
+        android:text="4" 
+        android:onClick="func4"
+        />
+
+    <Button
+        android:id="@+id/bdiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/b4"
+        android:layout_alignLeft="@+id/et"
+        android:text="DIV" 
+        android:onClick="funcdiv"
+        />
+
+    <Button
+        android:id="@+id/bsubtract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bdiv"
+        android:layout_alignTop="@+id/b4"
+        android:layout_marginTop="18dp"
+        android:gravity="center_vertical"
+        android:text="@string/button2"
+        android:textSize="20sp"
+        android:visibility="visible" 
+        android:onClick="funcsubtract"
+        />
+
+    <Button
+        android:id="@+id/badd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/bsubtract"
+        android:layout_below="@+id/bsubtract"
+        android:layout_marginTop="22dp"
+        android:gravity="center_vertical"
+        android:text="@string/button1"
+        android:textSize="20sp"
+        android:visibility="visible"
+        android:onClick="funcadd" 
+         />
+
+    <Button
+        android:id="@+id/bmul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bdiv"
+        android:layout_alignLeft="@+id/bdiv"
+        android:text="MUL" 
+        android:onClick="funcmul"
+        />
+
+    <Button
+        android:id="@+id/b7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bdiv"
+        android:layout_alignLeft="@+id/b4"
+        android:layout_marginBottom="14dp"
+        android:text="7" 
+        android:onClick="func7"
+        />
+
+    <Button
+        android:id="@+id/b8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/b7"
+        android:layout_alignBottom="@+id/b7"
+        android:layout_alignLeft="@+id/bdot"
+        android:layout_marginLeft="16dp"
+        android:text="8" 
+        android:onClick="func8"
+        />
+
+    <Button
+        android:id="@+id/b5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/b3"
+        android:layout_alignLeft="@+id/b8"
+        android:text="5" 
+        android:onClick="func5"
+        />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/b0"
+        android:layout_alignLeft="@+id/b0"
+        android:text="2" 
+        android:onClick="func2"
+        />
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/b1"
+        android:layout_below="@+id/b1"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/b6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/b3"
+        android:layout_alignParentRight="true"
+        android:text="6" 
+        android:onClick="func6"
+        />
+
+    <Button
+        android:id="@+id/bcomma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bclear"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@+id/badd"
+        android:text=","
+        android:onClick="funccomma"
+        />
+
+</RelativeLayout>
